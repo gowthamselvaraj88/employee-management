@@ -9,37 +9,34 @@ import Login from './tables/Login'
 
 
 const router = createBrowserRouter([
-       { 
-        path:'/',
-        element:<Rootoutlet/>,
+    {
+        path: '/',
+        element: <Rootoutlet />,
         children: [
-                {
-                    
-                    path:'Login',
-                    element:<Login/>,
-                },
-                {
-                    index: true,
-                    path:'App',
-                    element:<App/>,
-                },
-                {
-                    index: true,
-                    path:'Logout',
-                    element:<Rootoutlet/>,
-                },
-            ] , 
-       }, 
-    //    { 
-        // path:'/App',
-        // element:<App/>}
-        ])
+            {
+
+                path: 'Login',
+                element: <Login />,
+            },
+            {
+                index: true,
+                path: 'App',
+                element: <App />,
+            },
+            {
+                index: true,
+                path: 'Logout',
+                element: <Rootoutlet />,
+            },
+        ],
+    },
+])
 
 const Router = () => {
 
     return (
         <div>
-            <RouterProvider router={router}/>
+            <RouterProvider router={router} />
         </div>
     );
 }
