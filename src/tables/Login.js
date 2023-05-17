@@ -49,7 +49,7 @@ import React from 'react'
        </lable>
        {errors?.MailID?.type ==="required" && <p>This field is required</p>}
        {errors?.MailID?.type ==="maxLength" && (<p>First name cannot exceed 15 characters</p>)}
-       {errors?.MailID?.type === "pattern" && (<P>Mail Address only</P>)}
+       {errors?.MailID?.type === "pattern" && (<p>Mail Address only</p>)}
        <lable className='textlable'>Password:
        <input 
        {...register("Password",{
@@ -59,7 +59,7 @@ import React from 'react'
        </lable>
        {errors?.MailID?.type ==="required" && <p>This field is required</p>}
        {errors?.Password?.type ==="maxLength" && (<p>First name cannot exceed 8 characters</p>)}
-       {errors?.Password?.type === "pattern" && (<P>Valuable Password only</P>)}
+       {errors?.Password?.type === "pattern" && (<p>Valuable Password only</p>)}
        <button type='sumbit'
         // onClick={handleSubmited}
        // onClick={()=>{setIsact(false)}}
